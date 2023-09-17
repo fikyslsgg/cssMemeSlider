@@ -77,3 +77,21 @@ overflow: hidden;
 .text__item{
   min-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .slider__footer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .text-wrapper{
+    width: 100%;
+    font-size: 2em;
+  }
+  .slider__footer {
+    gap: 3em;
+  }
+  .controls__item{
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
