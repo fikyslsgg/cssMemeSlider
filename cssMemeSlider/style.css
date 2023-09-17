@@ -1,3 +1,7 @@
+html{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 img{
   width: 100%;
 }
@@ -19,8 +23,9 @@ overflow: hidden;
 
 .slider__line{
   display: flex;
-  transition: all 0.5s;
+  transition: all 1s;
   transform: translateX(0%);
+  gap: 5rem;
 }
 
 .slider__item{
@@ -40,7 +45,7 @@ overflow: hidden;
   background-color: rgb(33, 91, 201);
   cursor: pointer;
   border: 1px solid transparent;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .controls__item:hover {
@@ -71,7 +76,7 @@ overflow: hidden;
   display: flex;
   align-items: center;
   transform: translateX(0%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .text__item{
@@ -83,13 +88,16 @@ overflow: hidden;
     flex-direction: column-reverse;
     align-items: center;
   }
+
   .text-wrapper{
     width: 100%;
     font-size: 2em;
   }
+
   .slider__footer {
     gap: 3em;
   }
+  
   .controls__item{
     width: 1.5em;
     height: 1.5em;

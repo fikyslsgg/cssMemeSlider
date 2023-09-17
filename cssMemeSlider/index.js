@@ -10,7 +10,7 @@ const slideWidth = sliderItem.offsetWidth;
 const textWidth = textItem.offsetWidth;
 
 function rollSlide(){
-  sliderLine.style.transform = `translateX(${-count * slideWidth}px)`
+  sliderLine.style.transform = `translateX(${-count * slideWidth - 80 * count}px)`
   textLine.style.transform = `translateX(${-count * textWidth}px)`
 }
 
@@ -34,7 +34,7 @@ function thisSlide(index){
 }
 
 controls.forEach((item, index) => {
-  item.addEventListener('click', (event)=>{
+  item.addEventListener('click', (e)=>{
     count = index
     thisSlide(count)
     rollSlide()
